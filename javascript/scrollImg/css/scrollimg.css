@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+
+/* 排行榜 */
+.scroll_img{ width:950px; margin:55px auto; position:relative; zoom:1; }
+.pic_ul li{ background:url(../images/img_bg.jpg); width:82px; height:106px; overflow:hidden; padding:2px; float:left; display:inline; margin:0 2px;}
+.img_midcenter { position:relative;  height:80px; width:80px; overflow:hidden; zoom:1;}
+.img_midcenter img{ vertical-align:middle}
+.pic_ul .img_midcenter .f_aimg{*font_family:Arial; display:table-cell; *display:block;vertical-align:middle; text-align:center; width:80px; height:80px; overflow:hidden; position:relative; margin:0 auto;}
+.pic_ul .img_midcenter .f_aimg:hover{ text-decoration:none;}
+.img_midcenter span{font-size:11px; color:#2d5361; position:absolute; top:1px;right:1px; display:block; zoom:1; width:20px; height:20px; overflow:hidden; background-image:url(../images/sprite.png); background-repeat:no-repeat; text-align:center; line-height:20px; text-decoration:none;}
+.pic_ul .nobody,.pic_ul .nobody a.f_aimg{ width:82px; height:106px;}
+.img_midcenter span.num1{ color:#fff;}
+.img_midcenter span.num2{ background-position:0 -21px; color:#fff;}
+.img_midcenter span.num3{ background-position:0 -42px; color:#fff;}
+.img_midcenter span.num{ background-position:0 -63px;}
+.pic_ul .username{ display:block; text-align:center; white-space:nowrap; line-height:25px; color:#f0c878; width:80px; overflow:hidden}
+.pic_ul .username img{ margin-right:2px;}
+
+
+/* action */
+.scroll_handle{ position:absolute; top:30px; width:100%;}
+.scroll_handle span { background-image: url(../images/sub2_tab.jpg);background-repeat:no-repeat;display:block;font-size:0;height:28px;line-height:0;overflow:hidden;position:absolute; width:24px; cursor:pointer}
+.scroll_handle .pre_btn{ background-position:-389px 0; top:0; left:0 }
+.scroll_handle .first_btn{ background-position:-389px -44px;top:33px; left:0}
+.scroll_handle .next_btn{ background-position:-415px 0;top:0; right:0; }
+.scroll_handle .last_btn{ background-position:-415px -44px; top:33px; right:0}
+
+/* add by f2er 11-12-30*/
+.friend_box{ width:900px; height:110px; overflow:hidden; zoom:1; position:relative; margin:0 auto;}
+

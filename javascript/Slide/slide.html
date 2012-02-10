@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>情封 图片幻灯片插件 slideImage--jQuery版</title>
+    <link href="../../static/css/demo.css" rel="stylesheet" type="text/css"/>
+<link href="cssv2/slide.css" type="text/css" rel="stylesheet" />
+<script src="jquery-1.4.4.min.js" type="text/javascript"></script>
+<script src="cssv2/slide.js" type="text/javascript"></script>
+</head>
+<body>
+<!--toolbar-->
+<div class="toolbar" id="toolbar"></div>
+<!--/toolbar-->
+<div class="ox_box">
+	<span id="pic_slide">点击显示图片幻灯片</span>
+</div>
+<div class="bottomBar" id="bottomBar"></div>
+<script src="../../static/js/mod_f2er.js" type="text/javascript"></script>
+<script type="text/javascript">
+/*图片数组*/
+var picList=[{"surl":"http://photo.img4399.com/201111/28/121465122_1322473333eNMB.jpg","burl":"http://photo.img4399.com/201111/28/121465122_1322473333eNMB.jpg"},{"surl":"http://photo.img4399.com/201111/28/121465122_1322459962kpBK.gif","burl":"http://photo.img4399.com/201111/28/121465122_1322459962kpBK.gif"},{"surl":"http://photo.img4399.com/201111/28/121465122_1322459962h708.gif","burl":"http://photo.img4399.com/201111/28/121465122_1322459962h708.gif"},{"surl":"http://photo.img4399.com/201111/28/121465122_13224599625DJQ.gif","burl":"http://photo.img4399.com/201111/28/121465122_13224599625DJQ.gif"},{"surl":"http://photo.img4399.com/201111/28/121465122_13224599625a5t.gif","burl":"http://photo.img4399.com/201111/28/121465122_13224599625a5t.gif"},{"surl":"http://photo.img4399.com/201111/28/121465122_1322459961Y2g5.gif","burl":"http://photo.img4399.com/201111/28/121465122_1322459961Y2g5.gif"},{"surl":"http://photo.img4399.com/201111/28/121465122_1322459961RUD0.gif","burl":"http://photo.img4399.com/201111/28/121465122_1322459961RUD0.gif"},{"surl":"http://photo.img4399.com/201111/28/121465122_1322459961U4mN.gif","burl":"http://photo.img4399.com/201111/28/121465122_1322459961U4mN.gif"},{"surl":"http://photo.img4399.com/201111/28/121465122_132245996167U5.gif.thumb.jpg","burl":"http://photo.img4399.com/201111/28/121465122_132245996167U5.gif"},{"surl":"http://photo.img4399.com/201111/28/121465122_13224599614jHZ.gif","burl":"http://photo.img4399.com/201111/28/121465122_13224599614jHZ.gif"},{"surl":"http://photo.img4399.com/201111/28/121465122_1322459961zH5E.gif","burl":"http://photo.img4399.com/201111/28/121465122_1322459961zH5E.gif"},{"surl":"http://photo.img4399.com/201111/28/121465122_13224599609u9l.gif","burl":"http://photo.img4399.com/201111/28/121465122_13224599609u9l.gif"},{"surl":"http://photo.img4399.com/201111/28/121465122_1322459960E8F0.gif","burl":"http://photo.img4399.com/201111/28/121465122_1322459960E8F0.gif"},{"surl":"http://photo.img4399.com/201111/28/121465122_1322459960997x.gif.thumb.jpg","burl":"http://photo.img4399.com/201111/28/121465122_1322459960997x.gif"},{"surl":"http://photo.img4399.com/201111/28/121465122_1322459959v53k.gif","burl":"http://photo.img4399.com/201111/28/121465122_1322459959v53k.gif"},{"surl":"http://photo.img4399.com/201111/28/121465122_132245994352wq.gif","burl":"http://photo.img4399.com/201111/28/121465122_132245994352wq.gif"},{"surl":"http://photo.img4399.com/201111/28/121465122_1322459943mMpj.gif.thumb.jpg","burl":"http://photo.img4399.com/201111/28/121465122_1322459943mMpj.gif"},{"surl":"http://photo.img4399.com/201111/28/121465122_1322459943nxo3.gif","burl":"http://photo.img4399.com/201111/28/121465122_1322459943nxo3.gif"},{"surl":"http://photo.img4399.com/201111/28/121465122_1322459942HVB1.gif","burl":"http://photo.img4399.com/201111/28/121465122_1322459942HVB1.gif"},{"surl":"http://photo.img4399.com/201111/28/121465122_1322459942BPYp.gif","burl":"http://photo.img4399.com/201111/28/121465122_1322459942BPYp.gif"},{"surl":"http://photo.img4399.com/201111/28/121465122_13224599424jJS.gif.thumb.jpg","burl":"http://photo.img4399.com/201111/28/121465122_13224599424jJS.gif"},{"surl":"http://photo.img4399.com/201111/28/121465122_1322459942SX4D.gif","burl":"http://photo.img4399.com/201111/28/121465122_1322459942SX4D.gif"},{"surl":"http://photo.img4399.com/201111/28/121465122_1322459942XaQU.gif","burl":"http://photo.img4399.com/201111/28/121465122_1322459942XaQU.gif"},{"surl":"http://photo.img4399.com/201111/28/121465122_1322459942Xaxs.gif","burl":"http://photo.img4399.com/201111/28/121465122_1322459942Xaxs.gif"},{"surl":"http://photo.img4399.com/201111/28/121465122_1322459941n959.gif","burl":"http://photo.img4399.com/201111/28/121465122_1322459941n959.gif"},{"surl":"http://photo.img4399.com/201111/28/121465122_1322459941jioW.gif.thumb.jpg","burl":"http://photo.img4399.com/201111/28/121465122_1322459941jioW.gif"},{"surl":"http://photo.img4399.com/201111/28/121465122_13224599410PI9.gif","burl":"http://photo.img4399.com/201111/28/121465122_13224599410PI9.gif"},{"surl":"http://photo.img4399.com/201111/28/121465122_1322459941267v.gif","burl":"http://photo.img4399.com/201111/28/121465122_1322459941267v.gif"},{"surl":"http://photo.img4399.com/201111/28/121465122_1322459940Z1jG.gif","burl":"http://photo.img4399.com/201111/28/121465122_1322459940Z1jG.gif"},{"surl":"http://photo.img4399.com/201111/28/121465122_132245994052JC.gif","burl":"http://photo.img4399.com/201111/28/121465122_132245994052JC.gif"},{"surl":"http://photo.img4399.com/201111/28/121465122_1322459550ft8w.jpg.thumb.jpg","burl":"http://photo.img4399.com/201111/28/121465122_1322459550ft8w.jpg"}];
+
+$("#pic_slide").click(function(){
+	$.slideImage( { data:"burl",current:15,imgJson:picList });
+});
+
+
+mod_f2er.topBar('幻灯片效果','toolbar');
+mod_f2er.bottomBar('bottomBar');
+</script>
+</body>
+</html>

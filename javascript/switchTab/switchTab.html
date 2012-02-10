@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>情封 switchTab模块 tab切换</title>
+<link href="../../static/css/demo.css" rel="stylesheet" type="text/css"/>
+<link href="css/switchTab.css" rel="stylesheet" />
+</head>
+<body>
+<!--toolbar-->
+<div class="toolbar" id="toolbar"></div>
+<!--/toolbar-->
+<div class="ox_box">
+  <!--m_tab-->
+  <div class="m_tab">
+	<!--tab_hd-->
+	<div class="tab_hd">
+		<ul class="tab_hd clearfix" id="sub_tabt">
+		  <li class="on"><span>选项一</span></li>
+		  <li><span>选项二</span></li>
+		  <li><span>选项三</span></li>
+		  <li><span>选项四</span></li>
+		</ul>
+	</div>
+	<!--/tab_hd-->
+	<!--tab_bd-->
+	<div class="tab_bd" id="sub_con">
+	   <ul class="content">
+		   <li>内容一</li>
+	   </ul>
+	   <ul class="content" style="display:none;">
+		   <li>内容二</li>
+	   </ul>
+	   <ul class="content" style="display:none;">
+		   <li>内容三</li>
+	   </ul>
+	   <ul class="content" style="display:none;">
+		   <li>内容四</li>
+	   </ul>是他
+	</div>
+	<!--/tab_bd-->
+  </div>
+  <!--/m_tab-->
+</div>
+<div class="bottomBar" id="bottomBar"></div>
+<script src="../../static/js/mod_f2er.js" type="text/javascript"></script>
+<script src="js/switchTab.js" type="text/javascript"></script>
+<script type="text/javascript">
+mod_f2er.topBar('tab切换效果','toolbar');
+mod_f2er.bottomBar('bottomBar');
+switchTab({handleId:"sub_tabt",contentId:"sub_con",eventType:"mouseover",tagname:"ul",classname:"content"})
+</script>
+</body>
+</html>

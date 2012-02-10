@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.dropDown{width:1000px; margin:50px auto 0}
+/*m_link*/
+.m_link{display:inline; float:right; position:relative; margin-right:10px;}
+.m_link .m_close,.m_link .m_open{ display:block; background:url(../image/pub.png) no-repeat 0 -75px; width:77px; height:30px; padding-left:10px; line-height:30px; color:#1c8ed3; cursor:pointer; }
+.m_link .m_open{ background-position:0 -45px;}
+.m_link .m_lbd{ background:url(../image/m_lbd.png) no-repeat; width:261px; height:140px;position:absolute; right:0;_right:-1px; top:30px; padding:25px 12px;}
+.m_lbd ul{ margin-right:-15px; overflow:hidden; zoom:1}
+.m_lbd li{ float:left; width:60px; height:70px; overflow:hidden; text-align:center; margin-right:5px; display:inline; padding-bottom:10px;}
+.m_lbd a{ background-image:url(../image/m_link.png); background-repeat:no-repeat; display:block; height:70px; width:50px; margin:0 auto; padding-top:45px; color:#1c8ed3}
+.img_ht{ background-position:5px 0}/*话题*/
+.img_hh{ background-position:-45px 0}/*回复*/
+.img_qz{ background-position:-95px 0}/*群组*/
+.img_hy{ background-position:-145px 0;}/*好友*/
+.img_zl{ background-position:-195px 0}/*个人资料*/
+.img_xx{ background-position:-245px 0}/*消息*/
+.img_tz{ background-position:-295px 0}/*通知*/
+
+
+/*m_search*/
+.m_search{ }
+.m_type,.m_keyword{ background-image:url(../image/search.png); background-repeat:no-repeat;}
+.m_type{ background-position:0 0; width:104px; height:30px; position:relative;}
+.m_tvalue{ background:url(../image/pub.png) no-repeat right -160px; display:block; height:30px; line-height:30px; text-align:center; cursor:pointer; padding-right:15px;}
+
+/*m_tlist*/
+.m_tlist{ position:absolute; width:101px; height:124px; left:0; top:30px; z-index:1000}
+.m_tlist .hd,.m_tlist .bd,.m_tlist .fd{ background-image:url(../image/m_tlist.png); background-repeat:no-repeat; width:101px;}
+.m_tlist .hd{ background-position:0 0; height:5px; overflow:hidden;}
+.m_tlist .bd{ background-position:-101px 0; background-repeat:repeat-y; padding:0 4px 0 1px; width:96px;}
+.m_tlist .fd{ background-position:-202px top; overflow:hidden; height:5px;}
+.m_tlist li{ height:30px; line-height:30px;}
+.m_tlist a{ display:block; zoom:1; padding-left:5px; color:#1c8ed3}
+.m_tlist a:hover,.m_tlist .active a{ background:#1c8ed3; color:#fff; text-decoration:none}
