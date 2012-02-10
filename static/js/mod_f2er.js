@@ -123,7 +123,7 @@ mod_f2er={
 		   if( ! this._$(id) ){
 				return;   
 			}
-			var _tpl='&copy;copyRight 2012 4399UED @情封制作  前端组 维护 @小薇设计  内部资料 请勿外传 谢谢合作';
+			var _tpl='&copy;copyRight 2012';
 			this._$(id).innerHTML=_tpl;
 		},
 		blind:function( id ){
