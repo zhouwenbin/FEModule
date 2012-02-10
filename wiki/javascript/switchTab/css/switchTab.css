@@ -1,0 +1,7 @@
+@charset "utf-8";
+.m_tab{}
+.m_tab .tab_hd{ height:25px; line-height:25px; border-bottom:1px solid #ddd;}
+.m_tab .tab_hd{ position:relative; top:0;}
+.m_tab .tab_hd li{ float:left; padding:2px 6px; height:20px; border:1px solid #ddd; margin-right:5px; display:inline;}
+.m_tab .tab_hd li.on{ border:1px solid #f00; border-bottom:1px solid #eff0f2;}
+.tab_bd{ padding:10px; border-width:0 1px 1px; border-color:#ddd; border-style:solid;}

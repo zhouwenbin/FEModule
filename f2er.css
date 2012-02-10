@@ -1,0 +1,47 @@
+@charset "gb2312";
+/* CSS Document 
+Use for:	www.f2er.net
+Version:	1.0
+Date:		2011/04/10
+Author:		ַי·ג
+Update:     2011/05/14
+*/
+
+/* CSS reset */
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{ padding: 0; margin: 0; }
+table { border-collapse: collapse; border-spacing: 0; }
+del, ins { text-decoration: none }
+fieldset, img { border: 0; }
+body,button,input,select,textarea{font:12px/1.5 tahoma,arial,\5b8b\4f53;}
+input,select,img{ vertical-align:middle}
+input,select{ outline:none}
+ul,ol{ list-style:none }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+address,cite,dfn,em,var{font-style:normal;}
+legend{ display:none}
+
+/* global */
+body{ background:#fff; font:12px/1.8; }
+.wrapper{ margin:0 auto;text-align:left;width:1000px; }
+td{ font-size:12px; line-height:160%;}
+.left{ float:left }
+.right{ float:right }
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+.txthide{ text-indent:-999em;overflow:hidden; line-height:0; font-size:0}
+.clearfix:after{ content:""; height:0; visibility:hidden; display:block; clear:both;}
+.clearfix{ zoom:1;}
+.clear{ clear:both }
+
+
+/*mod_box*/
+body{background:url(../../wiki/static/images/avatar/bg.png) repeat;}
+.mod_box{ height:382px; width:100%; position:absolute; left:0; top:50%; margin-top:-191px;}
+.mod_box .ued{ width:1000px; margin:0 auto;display:block;}
+.mod_box .mod_nav{ background:#000000; height:40px; text-align:center; line-height:40px;color:#fff}
+.mod_box .mod_nav a{ font-size:18px; color:#fff; margin:0 10px; zoom:1}
+.mod_box .mod_nav a:hover{ color:#84BF57; text-decoration:none}
+.mod_box p{ color:#000; text-align:center; line-height:2; font-size:14px;}
+.mod_box p span{ color:#f00;}
+.mod_box p a{ color:#999; font-size:12px; margin-left:20px;}
+

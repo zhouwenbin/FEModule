@@ -1,0 +1,31 @@
+
+<!--mod_item-->
+<div class="mod_item">
+    <h2>调用说明</h2>
+    <!--调用说明-->
+    <div class="invoke_desc mt10">
+        <ol>
+            <li>1.先加载Jquery库,后加载slide.js</li>
+            <li>2.参数说明:
+                <p>1) data:0 //自定义属性，存url</p>
+                <p>2) current:0,//默认第几张 </p>
+                <p>3) imgJson:{} //服务器端返回的JSON</p>
+            </li>
+            <li>3.调用说明:
+                <p>/*图片数组*/
+            var picList=[{"surl":"http://photo.img4399.com/201111/28/121465122_1322473333eNMB.jpg","burl":"http://photo.img4399.com/201111/28/121465122_1322473333eNMB.jpg"}];
+            </p>
+            <p>$("#pic_slide").click(function(){
+            	$.slideImage( { data:"burl",current:15,imgJson:picList });
+            });</p>
+            </li>
+        </ol>
+        <p class="example mt10">效果预览:<a href="javascript/Slide/slide.html" target="_blank" title="幻灯片模块">幻灯片模块</a></p>
+    </div>
+    <!--/调用说明-->
+	<h2 class="mt50">更新记录</h2>
+	<ol class="mod_history">
+		<li>&middot;11-11-28 <span>by 情封</span></li>
+	</ol>
+</div>
+<!--/mod_item-->
